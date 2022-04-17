@@ -1,0 +1,1002 @@
+{
+  "id": "4b49abf5-f380-40c4-bc1e-d7c5a8b9f952",
+  "version": "2.0",
+  "name": "Assignment 4 Selenium Login System Under Test",
+  "url": "https://demo.guru99.com/test/newtours/index.php",
+  "tests": [{
+    "id": "b70f80ad-b52e-4382-b6de-3d4b3e9afa29",
+    "name": "Test Case #002 - Valid Login",
+    "commands": [{
+      "id": "46d0e547-f825-49ff-a9fa-a1d1b3e4a5d7",
+      "comment": "",
+      "command": "//Opens the Demo Guru New Tours Website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d152b97-514f-49fa-9a31-3535ee774a25",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2699022-f698-43bd-b975-6ae01bdf8ad9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1192x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "965b2a8f-9b97-4b9e-9e0d-3e4e65e5fc71",
+      "comment": "",
+      "command": "//Enter username as hi",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "999f877e-d784-4d22-9159-2952d5b9afa7",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81bab72a-b1a9-45cd-85db-7bc19ea44d6a",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "hi"
+    }, {
+      "id": "32b2766a-2e69-45ef-9b41-a339566c60a4",
+      "comment": "",
+      "command": "//Enter password as hi",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86d33f62-413f-4654-8dfa-abc26928449a",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ceae4c-14b4-4ffb-a4f2-57c621f48f80",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "hi"
+    }, {
+      "id": "d1338974-037f-474c-87a5-34026ac124ee",
+      "comment": "",
+      "command": "//Click submit button",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b185fad-efe1-4c7b-b326-c199b2d75390",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e050358e-cfad-40c3-bd17-f571d496bf01",
+      "comment": "",
+      "command": "//Assert text \"Login Successfully\" to check if the login was successful",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da3998c8-b852-45b3-ad42-2a13f16ec41c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [],
+      "value": "Login Successfully"
+    }, {
+      "id": "db57c4dc-1808-4e33-b3f0-ab35006c117a",
+      "comment": "",
+      "command": "//The assert command passed because Login successfully matches. This means there is a valid login.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38377f55-a5c3-4015-9050-e647e3d86851",
+      "comment": "",
+      "command": "//Click the Flights tab to find a flight after successful log in",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8e0bb98-a1cd-4b8b-b354-dcf5db7a4759",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Flights",
+      "targets": [
+        ["linkText=Flights", "linkText"],
+        ["css=.mouseOver a", "css:finder"],
+        ["xpath=//a[contains(text(),'Flights')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'reservation.php')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Flights')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dcf756b-626b-4b23-8dd1-22d5db44eeed",
+      "comment": "",
+      "command": "//Verify if the Flight Finder element is present. This checks whether a valid user is able to navigate to the Flights page",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00d0463d-1435-4070-b9a2-231b1b2f57e1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=td:nth-child(1) td:nth-child(2) tr:nth-child(1) img:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1) td:nth-child(2) tr:nth-child(1) img:nth-child(1)", "css:finder"],
+        ["xpath=//td/table/tbody/tr/td[2]/table/tbody/tr/td/img", "xpath:position"]
+      ],
+      "value": "Flight Finder"
+    }, {
+      "id": "778eb68c-7462-4e47-82bf-8398af4b5d72",
+      "comment": "",
+      "command": "//The verify element present passed meaning that a valid login user can access the Flight page.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "de875921-5483-4b71-a1b9-f69a9083d15c",
+    "name": "Test Case #003 - Invalid Login",
+    "commands": [{
+      "id": "d8014ae5-2be1-42ba-b99e-4fbc03c630a1",
+      "comment": "",
+      "command": "//Opens the Demo Guru New Tours Website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "986314a5-e732-488c-bde7-baafe8bd81d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8cfa0df-523d-460e-9f36-a869bcde0ed7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1192x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63942872-7a55-4ae6-85e6-21adbfe0f23d",
+      "comment": "",
+      "command": "//Enter username as 0",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7ff67d5-f639-4706-8b1f-440c23730637",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e504d3a2-accc-4681-bd26-ef68f6314240",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "57eb8bea-56d8-4b37-9f21-2dc35301a61b",
+      "comment": "",
+      "command": "//Enter password as hello",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54a3c52c-3502-49a0-afdc-b500f74601e0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "345c7d92-ede2-47f0-8eaa-bce45a3e59c6",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "hello"
+    }, {
+      "id": "5b14f5ab-7057-4726-be2a-a4305609b57b",
+      "comment": "",
+      "command": "//Click submit button",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a76e08f-d52a-4a46-8c12-91d99adbcf71",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "310f0c0e-79c1-417f-aa6d-b24a246e596e",
+      "comment": "",
+      "command": "//Assert text \"Enter your userName and password to check if the login was not successful\"",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56047cc6-c1bd-4bff-bf92-f08173b12b85",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span:nth-child(3)",
+      "targets": [],
+      "value": "Enter your userName and password correct"
+    }, {
+      "id": "68534b10-440f-4caa-815a-56bfeb2493f8",
+      "comment": "",
+      "command": "//The assert command passed because Enter your userName and password correct matches. This means there is a invalid login.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9512a2d6-7311-4a50-bffc-cc84d7074c5e",
+    "name": "Test Case #001 - No Username and Password",
+    "commands": [{
+      "id": "ab93c4a7-024c-4cc1-8b83-2446afbe2896",
+      "comment": "",
+      "command": "//Opens the Demo Guru New Tours Website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dff21083-09e2-436a-87fa-e7f4e8af5a0b",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad962127-63b0-4916-8bdd-3f51afc50e9c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1196x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0838979-d218-4585-99ea-be61a0c46c40",
+      "comment": "",
+      "command": "//Clicked in the username box, but did not enter a value",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9b162aa-c023-400c-9de4-b2e2c2429baf",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f9d2b8e-c499-4423-bd44-8a24c45da25b",
+      "comment": "",
+      "command": "//Clicked in the password box, but did not enter a value",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e09ecc0a-cd3c-431e-b748-5530cae80e68",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b9a3ee2-28ce-4a78-9a18-d1e77cf92089",
+      "comment": "",
+      "command": "//Clicked submit button with no username or password entered",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7762c5d6-dd74-41ae-ab32-b54af8a1d624",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7020b803-b50b-48de-9098-9c192b34c306",
+      "comment": "",
+      "command": "//Assert text \"Enter your userName and password correct\" to check if the login was unsuccessful",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b1da8e5-4747-44bf-a815-95cd9824da36",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Successfully')]", "xpath:innerText"]
+      ],
+      "value": "Enter your userName and password correct"
+    }, {
+      "id": "05193592-b270-464a-974a-47211976257f",
+      "comment": "",
+      "command": "The assert command failed because Login Successfully does not match Enter your userName and password correct. This means there is a defect because the blank login was successful.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "794a5fda-36b3-40a7-a5fc-8af25aa21fa3",
+    "name": "Test Case #004 - Invalid Login, Register New Acc",
+    "commands": [{
+      "id": "4b727f1a-502a-43fa-8744-8d7dc90a62d8",
+      "comment": "",
+      "command": "//Opens the Demo Guru New Tours Website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cad66bde-fee5-4691-87cd-1f6c7f8a5541",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfffeb45-742e-493b-89ea-e1a6d71fbe40",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1196x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0d4663d-4b4e-4702-91ad-d6e4192e989d",
+      "comment": "",
+      "command": "//Enter username as 10",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e49967b4-e68d-4528-9d33-69818038c13a",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78fb0ad7-3e16-4d99-9af9-7b1b99adbe03",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "410e07a5-b806-45b9-a015-c7fcfd616ada",
+      "comment": "",
+      "command": "//Enter password as none",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c18e21eb-a402-45f4-9a0e-7dcfb8eb5e9b",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b1623fc-9630-46af-8e0b-ede7b3e6d15a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "none"
+    }, {
+      "id": "8ae4fdc4-6689-49c9-bfb0-2114c4a13bea",
+      "comment": "",
+      "command": "//Click submit button",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42277140-bcbd-4ba4-ac21-602c5251bd11",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa9299b3-79df-4042-a5c4-cf436f987181",
+      "comment": "",
+      "command": "//Assert text \"Enter your userName and password to check if login was not successful",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "079d839f-1e5c-45d7-98d7-9c4e69ba36b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span:nth-child(3)",
+      "targets": [
+        ["css=span:nth-child(3)", "css:finder"],
+        ["xpath=//td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter your userName and password correct')]", "xpath:innerText"]
+      ],
+      "value": "Enter your userName and password correct"
+    }, {
+      "id": "134e2780-42e5-4a41-8a9f-77a248dda58f",
+      "comment": "",
+      "command": "//The assert command passed because Enter your userName and password matches. This means there is a invalid login.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ae4ba85-589a-461c-a27f-d1fc9d8edc85",
+      "comment": "",
+      "command": "//Click the Register tab to register a new account after unsuccessful login.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71559a39-e15d-496b-9b07-9c810300f72d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=REGISTER",
+      "targets": [
+        ["linkText=REGISTER", "linkText"],
+        ["css=.mouseOver > a", "css:finder"],
+        ["xpath=//a[contains(text(),'REGISTER')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'register.php')]", "xpath:href"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REGISTER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cf5511c-cca3-4b76-8995-f4a1006401e5",
+      "comment": "",
+      "command": "//Verify if the Register element is present. This checks whether an invalid user is able to navigate to the Register page.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40d55117-b40a-46c4-af1b-708f83f39a1c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=td:nth-child(1) td:nth-child(2) tr:nth-child(1) img:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1) td:nth-child(2) tr:nth-child(1) img:nth-child(1)", "css:finder"],
+        ["xpath=//td/table/tbody/tr/td[2]/table/tbody/tr/td/img", "xpath:position"]
+      ],
+      "value": "Register"
+    }, {
+      "id": "542b56ac-5b7d-4b07-a7d5-220bceda4824",
+      "comment": "",
+      "command": "//Enter first name as hello",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4745686-8077-42c3-8754-bd5bd5d7b2a3",
+      "comment": "",
+      "command": "click",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43e8e0d3-de75-4120-b34d-20886ae8a409",
+      "comment": "",
+      "command": "type",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "hello"
+    }, {
+      "id": "383ab076-7f04-4d00-861a-daef29c77285",
+      "comment": "",
+      "command": "//Enter last name as goodbye",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c314710b-b21a-4210-b972-1fd3819f7292",
+      "comment": "",
+      "command": "click",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ce2dae6-3492-4e4d-956c-1d286c06103c",
+      "comment": "",
+      "command": "type",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "goodbye"
+    }, {
+      "id": "451efcb9-59c1-4088-a2ea-303b077dc14d",
+      "comment": "",
+      "command": "//Enter phone number as 813-123-4567",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95965b04-96eb-47c9-a4fd-b7e2b69cb48c",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=tr:nth-child(4) > td > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58838c21-2467-4c9a-9a65-98ea23598eaa",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=tr:nth-child(4) > td > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "813-123-4567"
+    }, {
+      "id": "52717ba6-01b6-4f80-b26a-e933f534c5ee",
+      "comment": "",
+      "command": "//Enter email as hello@google.com",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7642e0c1-3b19-43c2-b7e8-41dd13ce03a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b4522c4-c1ac-4eb4-a682-7d7356df7c3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "hello@google.com"
+    }, {
+      "id": "c2a820b9-5343-4054-959a-27fb83ef4d74",
+      "comment": "",
+      "command": "//Enter address as 4202 E Fowler Avenue",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d2c6915-d6eb-4e86-a794-5062925d5922",
+      "comment": "",
+      "command": "click",
+      "target": "name=address1",
+      "targets": [
+        ["name=address1", "name"],
+        ["css=tr:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='address1']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d61c79a-c7b5-40db-ad39-d1ad7526e351",
+      "comment": "",
+      "command": "type",
+      "target": "name=address1",
+      "targets": [
+        ["name=address1", "name"],
+        ["css=tr:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='address1']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "4202 E Fowler Avenue"
+    }, {
+      "id": "d61ee16d-17f3-404a-ac8a-8fd2f9baa094",
+      "comment": "",
+      "command": "//Enter city as Tampa",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bba16d66-f8ce-404f-b0f3-d525032cf13d",
+      "comment": "",
+      "command": "click",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dda6c0b3-55a3-46b0-aa4a-6d4704cfd832",
+      "comment": "",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Tampa"
+    }, {
+      "id": "78ae61ca-2d2c-451c-9132-b912e9788a9d",
+      "comment": "",
+      "command": "//Enter state as Florida",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83d04b9f-5b32-411c-8229-abc42f64ca28",
+      "comment": "",
+      "command": "click",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c52b9358-c0d6-41f0-9785-749db2359d02",
+      "comment": "",
+      "command": "type",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Florida"
+    }, {
+      "id": "2ccc1125-b6b5-4e75-b5b7-99500e751f5e",
+      "comment": "",
+      "command": "//Enter zip code as 33620",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b983fe2c-521e-4920-b57a-4aa569d1d5e6",
+      "comment": "",
+      "command": "click",
+      "target": "name=postalCode",
+      "targets": [
+        ["name=postalCode", "name"],
+        ["css=tr:nth-child(10) input", "css:finder"],
+        ["xpath=//input[@name='postalCode']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce4198fa-cb10-4e7a-a274-b89763c5175e",
+      "comment": "",
+      "command": "type",
+      "target": "name=postalCode",
+      "targets": [
+        ["name=postalCode", "name"],
+        ["css=tr:nth-child(10) input", "css:finder"],
+        ["xpath=//input[@name='postalCode']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": "33620"
+    }, {
+      "id": "8ac7226b-4ec4-4b7b-bd5d-399be26594cc",
+      "comment": "",
+      "command": "//Enter country as United States",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "963c4ac7-c07a-4363-857f-47df7e000db6",
+      "comment": "",
+      "command": "click",
+      "target": "name=country",
+      "targets": [
+        ["name=country", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='country']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4d11403-349f-45d5-8da8-9f22d3753d1a",
+      "comment": "",
+      "command": "select",
+      "target": "name=country",
+      "targets": [],
+      "value": "label=UNITED STATES"
+    }, {
+      "id": "6f8c8df8-56ff-4432-9831-96d9a3bec6d5",
+      "comment": "",
+      "command": "//Enter username as hello123",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da999da8-5b47-4953-84da-bca3ebd26a0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b05edad-2a15-44ad-9cd4-f36598858349",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": "hello123"
+    }, {
+      "id": "864a2763-b6c6-43f4-9279-508b71d7ad22",
+      "comment": "",
+      "command": "//Enter password as goodbye456",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17ead99e-8cbf-44b1-a202-14b0bc8a167e",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2c558ea-382a-4905-aa89-92d4bc0aae63",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(14) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": "goodbye456"
+    }, {
+      "id": "f06954b0-9488-4a30-8f49-2f54874ff0b2",
+      "comment": "",
+      "command": "//Confirm password is goodbye456",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39889053-a957-428c-87e1-9d4393f22672",
+      "comment": "",
+      "command": "click",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "710fd59f-bb11-46f0-812b-c15d21e88c4a",
+      "comment": "",
+      "command": "type",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": "goodbye456"
+    }, {
+      "id": "47aa966d-7a61-41c5-9e28-583d914c09c1",
+      "comment": "",
+      "command": "//Click submit button",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d463700-64da-42a9-9ea9-f35d9a2ba68c",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[17]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9baf3b0-5dc2-4b13-9dfa-576eae35a47d",
+      "comment": "",
+      "command": "//Assert text \"Dear hello goodbye,\" displaying first and last name to check if the new account was created.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac144f91-28de-4e81-b5aa-d86cc02c9fb6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(1) b",
+      "targets": [
+        ["css=p:nth-child(1) b", "css:finder"],
+        ["xpath=//font/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Dear hello goodbye,')]", "xpath:innerText"]
+      ],
+      "value": "Dear hello goodbye,"
+    }, {
+      "id": "fecf408e-6c5e-4e17-90e5-b02364e2cca6",
+      "comment": "",
+      "command": "//The assert command passed because Dear hello goodbye matches. This means that a new account was successfully created.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2c8b331c-d50c-4178-b5f5-7b25a8d6b517",
+    "name": "Testing Assignment #4 Selenium Login System Under Test",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9512a2d6-7311-4a50-bffc-cc84d7074c5e", "b70f80ad-b52e-4382-b6de-3d4b3e9afa29", "de875921-5483-4b71-a1b9-f69a9083d15c", "794a5fda-36b3-40a7-a5fc-8af25aa21fa3"]
+  }],
+  "urls": ["https://demo.guru99.com/", "https://demo.guru99.com/test/newtours/index.php"],
+  "plugins": []
+}
